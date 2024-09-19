@@ -1,0 +1,106 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --bg--primary : #ffffff;
+    --bg--secondary : #000000;
+    --bg--trird : #40A2D8;
+    --text--primary : #ffffff;
+    --text--secondary : #000000;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--bg--primary);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+    height: 3em;
+    background-color: var(--bg--secondary);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 0.3em;
+}
+
+.home {
+    font-size: 1.3em;
+    color: var(--text--primary);
+    background-color: var(--bg--secondary);
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.home:hover {
+    background-color: #4094c1;
+    transition: 0.3s ease-in-out;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ECE5C7;
+    font-size: 0.8em;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 0.5em;
+    display: inline-block;
+
+}
+
+.navigation>li>a {
+    color: #ECE5C7;
+    text-decoration: none;
+    padding: 0.7em 1.5em 0.7em 1.5em;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+
+.navigation li a:hover {
+    background-color: #4094c1;
+    transition: 0.3s ease-in-out;
+}
+
+.contact {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8em;
+}
+
+.contactbtn {
+    padding: 0.7em;
+    border-radius: 30px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 0.8em;
+    background-color: var(--bg--trird);
+    text-transform: capitalize;
+    border: none;
+    color: #ECE5C7;
+    cursor: pointer;
+}
+
+.contactbtn:hover {
+    background-color: #4094c1;
+    transition: 0.3s ease-in-out;
+}
